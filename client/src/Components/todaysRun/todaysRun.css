@@ -1,0 +1,12 @@
+.todaysRun {
+  padding: 10px;
+  margin: 20px;
+  background-color: blanchedalmond;
+  border-radius: 5px;
+}
+
+.todaysDistance {
+  margin: 20px;
+  font-size: 45px;
+  align-items: center;
+}

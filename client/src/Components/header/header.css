@@ -1,0 +1,53 @@
+.wrapper {
+  width: auto;
+  height: 50px;
+  background-color: rgb(35, 65, 155);
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  font-family: "Josefin Sans", sans-serif;
+  white-space: nowrap;
+}
+.topLeft {
+  flex: 2;
+}
+.topMiddle {
+  flex: 8;
+}
+.topRight {
+  flex: 1;
+  margin-right: 5px;
+}
+
+.topImage {
+  width: 100px;
+  height: 40px;
+  object-fit: cover;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.mainList {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.mainListItem {
+  margin-right: 30px;
+  font-size: 18px;
+  font-weight: 300;
+  cursor: pointer;
+}
+.top {
+  margin: 5px;
+}
+a {
+  text-decoration: none;
+  color: cornsilk;
+  cursor: pointer;
+}
+.profile {
+  float: right;
+}
