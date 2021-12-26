@@ -12,6 +12,7 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import "./header.css"
+import { Link } from '@mui/material';
 
 const pages = ['Home', 'Schedule', 'Input Run'];
 const settings = ['Profile', 'Account', 'Logout'];
@@ -81,9 +82,11 @@ const Header = () => {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
+                 <Link href={page} underline="none" color="#23419b">
+                <MenuItem key={page} onClick={handleCloseNavMenu}>            
                   <Typography textAlign="center">{page}</Typography>
                 </MenuItem>
+                </Link>
               ))}
             </Menu>
           </Box>
@@ -98,14 +101,22 @@ const Header = () => {
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
-                
+
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
+              <Link 
+              href={page} 
+              underline="hover"
+              color="white"
+              >
                 {page}
+              </Link>
+                
               </Button>
+               
             ))}
           </Box>
 
@@ -133,7 +144,9 @@ const Header = () => {
             >
               {settings.map((setting) => (
                 <MenuItem key={setting} onClick={handleCloseNavMenu}>
+                  <Link href={setting} underline="none" color="#23419b">
                   <Typography textAlign="center">{setting}</Typography>
+                  </Link>
                 </MenuItem>
               ))}
             </Menu>
