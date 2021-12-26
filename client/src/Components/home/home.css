@@ -1,0 +1,34 @@
+.home {
+  display: flex;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.sideBar {
+  overflow-y: scroll;
+  position: sticky;
+  top: 0;
+}
+
+.container {
+  background-color: rgb(211, 211, 211, 0.7);
+  flex: 3;
+  display: flex;
+  padding-bottom: 10px;
+  margin: 5px;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.mainBar {
+  background-color: rgb(223, 223, 231, 0.7);
+  flex: 7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  margin: 5px;
+}
+.recentActivity {
+  margin: 10px;
+}
