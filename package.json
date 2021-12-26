@@ -1,6 +1,8 @@
 {
   "scripts": {
-    "start": "cd api && node index.js"
+    "server": "cd api && node index.js",
+    "client": "cd client && react-scripts start",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "dependencies": {
     "@syncfusion/ej2-react-calendars": "^19.4.38",
@@ -9,5 +11,8 @@
     "Faker": "^0.7.2",
     "moment": "^2.29.1",
     "moment-range": "^4.0.2"
+  },
+  "devDependencies": {
+    "concurrently": "^6.5.1"
   }
 }
