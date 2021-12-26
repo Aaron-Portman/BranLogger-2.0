@@ -15,7 +15,7 @@ app.use(cors());
 app.use(express.static(path.resolve(__dirname, 'build')));
 
 app.get("/home", (req,res) =>{
-    res.send({ mileage: 7})
+    res.send({ mileage: 8})
 })
 app.get("/api", (req, res) => {
     res.json({ message: "Hello from server!" });
